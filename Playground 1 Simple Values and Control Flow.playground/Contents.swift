@@ -1,6 +1,6 @@
 //: Simple Values
 //: 1. Create a constant with an explicit type of Float that equals 4.
-
+var string = "I am awesome!"
 
 //: 2. Try removing the conversion to String from the last line. Copy the error and place it in a block comment below this block of code.
 let label = "The width is "
