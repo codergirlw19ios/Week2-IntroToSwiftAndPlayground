@@ -4,7 +4,7 @@ let explicitfloat: Float = 4
 //: 2. Try removing the conversion to String from the last line. Copy the error and place it in a block comment below this block of code.
 let label = "The width is "
 let width = 94
-let widthLabel = label + width
+let widthLabel = label + String(width) //  With out String following error is generated
 
 /* error: kademgari_Assign2.playground:5:24: error: binary operator '+' cannot be applied to operands of type 'String' and 'Int'
  let widthlabel = label + width
@@ -24,11 +24,13 @@ if let name = optionalName {
     greeting = "Hello, \(name)"}   //This prints "Hello,"
 
 // following block prints ""Hello, Bhargavi""
-if(optionalName != nil){
-    greeting = "Hello, \(optionalName)"}
-    
-else{
+if let name = optionalName {
+    greeting = "Hello, \(name)"
+    print(greeting)
+}
+else {
     greeting = "Hello, Bhargavi"
+    print(greeting)
 }
     
 
@@ -44,7 +46,10 @@ case "cucumber", "watercress":
     print("That would make a good tea sandwich.")
 case let x where x.hasSuffix("pepper"):
     print("Is it a spicy \(x)?")
+default:
+print("Everything tastes good in soup.") // With out default block following error occurs snd code wont compile.
 }
+
 
 /* error: kademgari_Assign2.playground:4:1: error: switch must be exhaustive
  switch vegetable {
