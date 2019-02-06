@@ -14,7 +14,7 @@ let widthLabel = label + String(width)
 */
 //: 3. Use \() to include a floating-point calculation in a string and to include someone's name in a greeting.
 var name = "Sandra"
-var ounces: Float = 1.1
+let ounces: Float = 1.1
 print("Hi, \(name)! Did you know that healthy parakeets should weigh between \(ounces) and \(ounces + 0.3) ounces? So cute! Very small!")
 
 //: Control Flow
@@ -22,11 +22,16 @@ print("Hi, \(name)! Did you know that healthy parakeets should weigh between \(o
 var optionalString: String? = "Hello"
 print(optionalString == nil)
 
-var optionalName: String? = "John Appleseed"
+var optionalName: String? = nil
 var greeting = "Hello!"
 if let name = optionalName {
     greeting = "Hello, \(name)"
+}else{
+    greeting = "Who are you, stranger?"
 }
+print(greeting)
+//When optionalName = nil and there is no added else clause, nothing is returned. Now, "Who are you, stranger?" will be returned if
+//option name is nil.
 
 //: 2. Try removing the default case. Copy the error and place it in a block comment below this block of code.
 let vegetable = "red pepper"
