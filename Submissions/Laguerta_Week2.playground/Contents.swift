@@ -45,7 +45,11 @@ case let x where x.hasSuffix("pepper"):
 default:
     print("Everything tastes good in soup.")
 }
-
+/*
+ error: Laguerta_Week2.playground:32:1: error: switch must be exhaustive
+ switch vegetable {
+ ^
+*/
 //: 3. Add another variable to keep track of which kind of number was the largest, as well as what that largest number was.
 
 let interestingNumbers = [
