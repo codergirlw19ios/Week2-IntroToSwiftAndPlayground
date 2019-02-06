@@ -7,6 +7,11 @@ let label = "The width is "
 let width = 94
 let widthLabel = label + String(width)
 
+/*
+ error: Laguerta_Week2.playground:2:24: error: binary operator '+' cannot be applied to operands of type 'String' and 'Int'
+ let widthLabel = label + width
+                  ~~~~~ ^ ~~~~~
+*/
 //: 3. Use \() to include a floating-point calculation in a string and to include someone's name in a greeting.
 
 
