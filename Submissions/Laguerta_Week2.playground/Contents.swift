@@ -13,7 +13,9 @@ let widthLabel = label + String(width)
                   ~~~~~ ^ ~~~~~
 */
 //: 3. Use \() to include a floating-point calculation in a string and to include someone's name in a greeting.
-
+var name = "Sandra"
+var ounces: Float = 1.1
+print("Hi, \(name)! Did you know that healthy parakeets should weigh between \(ounces) and \(ounces + 0.3) ounces? So cute! Very small!")
 
 //: Control Flow
 //: 1. Change optional Name to nil. What greeting do you get? Add an else clause that sets a different greeting if optionalName is nil.
