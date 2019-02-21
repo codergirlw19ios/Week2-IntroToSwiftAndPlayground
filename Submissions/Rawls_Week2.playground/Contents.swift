@@ -1,18 +1,13 @@
-//: Simple Values
-//: 1. Create a constant with an explicit type of Float that equals 4.
-var string = "I did not read those instructions."
 
-//: 2. Try removing the conversion to String from the last line. Copy the error and place it in a block comment below this block of code.
-let label = "The width is "
-let width = 94
-let widthLabel = label + String(width)
+
+
 
 //: 3. Use \() to include a floating-point calculation in a string and to include someone's name in a greeting.
 
 
 //: Control Flow
 //: 1. Change optional Name to nil. What greeting do you get? Add an else clause that sets a different greeting if optionalName is nil.
-var optionalString: String? = "Hello"
+var optionalString: String? = "Bonjour"
 print(optionalString == nil)
 
 var optionalName: String? = "John Appleseed"
