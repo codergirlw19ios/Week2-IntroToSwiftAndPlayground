@@ -25,7 +25,7 @@ if let name = optionalName {
     greeting = "Bonjour!"
 }
 
-// changing optionalName to nil causes no greeting to print.
+// changing optionalName to nil causes the initial declaration of `greeting` to remain unchanged.
 //: 2. Try removing the default case. Copy the error and place it in a block comment below this block of code.
 let vegetable = "red pepper"
 switch vegetable {
